@@ -1,3 +1,18 @@
+custom-templates/
+├── python-basic/
+│   ├── cookiecutter.json
+│   ├── hooks/
+│   │   └── post_gen_project.py
+│   └── {{ cookiecutter.project_slug }}/
+│       ├── .gitignore
+│       ├── pyproject.toml
+│       ├── README.md
+│       └── src/
+│           ├── libs/
+│           │   └── __init__.py
+│           └── main.py
+
+
 The python-basic/ directory provides a Cookiecutter template for generating structured Python projects.
 
 cookiecutter.json
