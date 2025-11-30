@@ -1,46 +1,42 @@
-custom-templates/
-├── python-basic/
-│   ├── cookiecutter.json
-│   ├── hooks/
-│   │   └── post_gen_project.py
-│   └── {{ cookiecutter.project_slug }}/
-│       ├── .gitignore
-│       ├── pyproject.toml
-│       ├── README.md
-│       └── src/
-│           ├── libs/
-│           │   └── __init__.py
-│           └── main.py
 
+---
 
-The python-basic/ directory provides a Cookiecutter template for generating structured Python projects.
+## Overview
 
-cookiecutter.json
+The `python-basic/` directory provides a Cookiecutter template for generating structured Python projects.
 
+---
+
+## Components
+
+### **`cookiecutter.json`**
 Defines the variables Cookiecutter requests when generating a project.
 
-hooks/post_gen_project.py
+### **`hooks/post_gen_project.py`**
+Executed after project creation. Initializes a Git repository and creates the initial commit.
 
-Runs after project creation. Initializes a Git repository and creates the initial commit.
+### **`{{ cookiecutter.project_slug }}/`**
+Represents the structure of the generated project.
 
-{{ cookiecutter.project_slug }}/
+- **`.gitignore`**  
+  Defines ignored files and directories.
 
-Represents the generated project structure:
+- **`pyproject.toml`**  
+  Defines project metadata, dependencies, and tool configurations.
 
-.gitignore
-Specifies files and directories excluded from version control.
+- **`README.md`**  
+  Contains basic setup and usage instructions.
 
-pyproject.toml
-Defines project metadata, dependencies, and tool configurations.
+- **`src/`**
+  Holds the project’s source code:
 
-README.md
-Provides basic usage and setup instructions.
+  - **`libs/`**  
+    Internal modules or utilities.
 
-src/
-Contains the project’s source code:
+  - **`main.py`**  
+    Project entry point.
 
-libs/
-Holds internal modules or utilities.
+---
 
-main.py
-Entry point for executing the project.
+Si necesitas incluir esto para varias plantillas o generar un README general para todo el repositorio, te lo preparo también.
+
