@@ -1,0 +1,17 @@
+[project]
+name = "{{ cookiecutter.project_slug }}"
+version = "0.1.0"
+description = ""
+authors = [{ name = "{{ cookiecutter.author }}" }]
+requires-python = ">=3.12"
+readme = "README.md"
+
+[tool.ruff]
+select = ["E", "F", "I"]
+line-length = 88
+exclude = ["tests"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "lf"
